@@ -1,0 +1,32 @@
+{
+  "name": "trumpwall",
+  "version": "1.0.0",
+  "description": "A Trump Wall",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askletho/trumpwall.git"
+  },
+  "keywords": [
+    "trump",
+    "wall",
+    "twitter",
+    "facebook"
+  ],
+  "author": "Thomas Santelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/askletho/trumpwall/issues"
+  },
+  "homepage": "https://github.com/askletho/trumpwall#readme"
+}

@@ -18,6 +18,13 @@
     <footer>
         <% include ../partials/footer %>
     </footer>
+
+    <script>
+        var socket = io.connect('http://localhost:<%= server_port %>');
+        socket.on('message', function(message) {
+            $("main").prepend( "<div class='jumbotron'><h3>"+message+"</h3></div>");
+        })
+    </script>
     
 </body>
 </html>

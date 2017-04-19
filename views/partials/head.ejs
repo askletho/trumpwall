@@ -2,12 +2,32 @@
 <!-- HEAD -->
 
 <meta charset="UTF-8">
-<title>Super Awesome</title>
+<title>A Trump Wall</title>
 
-<!-- CSS (load bootstrap from a CDN) -->
+<!-- Load socket.io from server -->
+<script src="/socket.io/socket.io.js"></script>
+
+<!-- Load jQuery from a CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!-- Load bootstrap from a CDN -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+
+<!-- Custom CSS -->
 <style>
-    body    { padding-top:50px; }
+    body { 
+    	background: url("/trump-blur.png") no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; 
+		padding-top:50px; 
+	}
 </style>

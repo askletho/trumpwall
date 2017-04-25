@@ -49,7 +49,7 @@ io.sockets.on('connection', function (socket) {
     console.log('Un client est connecté !');
     // On envoie des messages à tous les clients à chaque nouveau tweet de D. Trump
     // Stream used for tests : var stream = T.stream('statuses/filter', { track: 'banana' })
-	var stream = T.stream('user', { screen_name: TRUMP_ID } )
+	var stream = T.stream('user', { screen_name: TRUMP_ID, with: "user" } )
 	stream.on('tweet', function (tweet) {
 		socket.broadcast.emit('message', tweet.text);
 	})
